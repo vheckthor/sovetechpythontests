@@ -21,7 +21,7 @@
 
 .. code::
 
-    $ python3.7 -m venv /tmp/env && source /tmp/en/bin/activate
+    $ python3.9.5 -m venv /tmp/env && source /tmp/en/bin/activate
     $ git clone git@github.com:vheckthor/sovtechpytest
     $ cd sovtechpytest
     $ pip install setuptools --upgrade && pip install pip --upgrade
