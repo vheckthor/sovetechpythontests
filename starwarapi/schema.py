@@ -33,11 +33,11 @@ class People(ObjectType):
 
 class Query(ObjectType):
     '''Query for starwars'''
-    people = Field(People, page = Int(required=True))
+    people = Field(People, page = Int(required=False))
     person = Field(People, name = String(required=True))
 
     @login_required
-    def resolve_people(self, info, page):
+    def resolve_people(self, info, page=1):
         '''Resolve people'''
         data = get_people(page)
         return json_to_obj(data)
