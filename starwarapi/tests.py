@@ -69,7 +69,6 @@ class TestEndPointsCase(GraphQLTestCase):
         )
 
         self.token = json.loads(response.content)['data']['authenticate']['token']
-        print(self.token)
         # This validates the status code and if you get errors
         self.assertResponseNoErrors(response)
 
@@ -93,7 +92,6 @@ class TestEndPointsCase(GraphQLTestCase):
             variables={'name': "Luke Skywalker"},
             headers = {'HTTP_AUTHORIZATION': self.token}
         )
-        print(response)
         # This validates the status code and if you get errors
         self.assertEqual(response.status_code, 200)
 
