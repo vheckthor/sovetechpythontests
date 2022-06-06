@@ -22,7 +22,7 @@
 .. code::
 
     $ python3.9.5 -m venv /tmp/env && source /tmp/en/bin/activate
-    $ git clone git@github.com:vheckthor/sovtechpytest
+    $ git clone https://github.com/vheckthor/sovetechpythontests.git
     $ cd sovtechpytest
     $ pip install setuptools --upgrade && pip install pip --upgrade
     $ pip install -r requirements.txt
@@ -35,9 +35,11 @@
 
 .. code::
 
-    git clone git@github.com:vheckthor/sovtechpytest
-    cd sovtechpytest
-    python -m venv env && ./env/Scripts/activate
+    $ git clone https://github.com/vheckthor/sovetechpythontests.git
+    $ cd sovtechpytest
+    $ python -m venv env 
+    $ venv env
+    $ ./env/Scripts/activate
     $ pip install -r requirements.txt
     $ cp .env.sample .env  # Please check env variables.
     $ python manage.py migrate
